@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+.todo-content {
+  margin: auto;
+  height: 95vh;
+  width: 40vw;
+  border: 1px solid #cccc;
+  background-color: rgba(0, 0, 0, 0.664);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  .todo-header {
+    color: #ffff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+  }
+  .form-section {
+    .form-content {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input {
+      border: none;
+      outline: none;
+      width: 60%;
+      padding: 8px 10px;
+      border-radius: 5px 0px 0px 5px;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    button {
+      border: none;
+      padding: 8px 10px;
+      border-radius: 0px 5px 5px 0px;
+      font-size: medium;
+      font-weight: 600;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+      &:hover {
+        background-color: #cccc;
+      }
+    }
+  }
+  .todo-list {
+    display: block;
+    width: 72%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .left-content {
+      }
+      .right-content {
+      }
+    }
+    ul {
+      width: 100%;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding: 4px 12px;
+        border-radius: 6px;
+        background-color: rgba(156, 148, 148, 0.993);
+
+        p {
+          margin: 0 !important;
+          font-size: 22px;
+          font-weight: 600;
+          color: #ffff;
+        }
+        span {
+          display: flex;
+          gap: 20px;
+          span {
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 24px;
+            span:last-child {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
